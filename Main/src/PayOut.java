@@ -15,6 +15,6 @@ public class PayOut {
         for (int i = 0; i <numberOfChildren ; i++) {
             total+= familie.getChildren().get(i).getAgeAddition() + ;
         }
-    return Total;
+    return total;
     }
 }

@@ -73,4 +73,6 @@ public class Family {
     {
         return children.get(index); 
     }
+
+    public boolean getUnemployedOrPensioned
 }
