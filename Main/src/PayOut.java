@@ -13,7 +13,7 @@ public class PayOut {
     int numberOfChildren = 0;
     numberOfChildren = familie.getNumberOfChildren();
         for (int i = 0; i <numberOfChildren ; i++) {
-            total+= familie.getChildren().get(i).getAgeAddition() + ;
+            total+= familie.getChild(i).getAgeAddition() + familie.getMoneyBasedOnSituation(i);
         }
     return total;
     }
