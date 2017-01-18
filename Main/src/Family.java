@@ -64,4 +64,9 @@ public class Family {
     {
         return children.size();
     }
+
+    public Child getChild(int index)
+    {
+        return children.get(index); 
+    }
 }
