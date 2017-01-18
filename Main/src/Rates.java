@@ -38,4 +38,30 @@ public class Rates {
             return 62.15;
         }
     }
+
+    public static double getSelfEmployed()
+    {
+        return 61.79;
+    }
+
+    public static double getOrphanRate()
+    {
+        return 353.76;
+    }
+
+    public static double getNormalRate(int childIndex)
+    {
+        if(childIndex==0)
+        {
+            return 92.09;
+        }
+        else if(childIndex==1)
+        {
+            return 170.39;
+        }
+        else
+        {
+            return 254.40;
+        }
+    }
 }
