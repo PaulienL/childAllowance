@@ -25,15 +25,15 @@ public class Child {
     {
         if(getAge() <=11)
         {
-            Rates.getAgeAddition6To11(number);
+            return Rates.getAgeAddition6To11(number);
         }
         else if(getAge()<=17)
         {
-            Rates.getAgeAddition12To17(number);
+            return Rates.getAgeAddition12To17(number);
         }
         else
         {
-            Rates.getAgeAddition18(number);
+            return Rates.getAgeAddition18(number);
         }
     }
 }

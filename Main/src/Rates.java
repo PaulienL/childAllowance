@@ -1,11 +1,11 @@
 /**
  * Created by paulienl on 18/01/2017.
  */
-public static class Rates {
+public class Rates {
 
-    public static double getAgeAddition6To11(int isFirstChild)
+    public static double getAgeAddition6To11(int childIndex)
     {
-        if(isFirstChild==0)
+        if(childIndex==0)
         {
             return 16.04;
         }
@@ -15,9 +15,9 @@ public static class Rates {
         }
     }
 
-    public static double getAgeAddition12To17(int isFirstChild)
+    public static double getAgeAddition12To17(int childIndex)
     {
-        if(isFirstChild==0)
+        if(childIndex==0)
         {
             return 24.43;
         }
@@ -27,9 +27,9 @@ public static class Rates {
         }
     }
 
-    public static double getAgeAddition18(int isFirstChild)
+    public static double getAgeAddition18(int childIndex)
     {
-        if(isFirstChild==0)
+        if(childIndex==0)
         {
             return 28.16;
         }

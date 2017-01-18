@@ -13,4 +13,8 @@ public class Family {
         this.father = father;
         children = new ArrayList<Child>();
     }
+
+    public ArrayList<Child> getChildren() {
+        return children;
+    }
 }
