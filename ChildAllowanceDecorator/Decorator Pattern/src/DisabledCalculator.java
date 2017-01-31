@@ -1,16 +1,13 @@
 /**
  * Created by paulienl on 20/01/2017.
  */
-public class DisabledCalculator implements Calculator {
-    private Child child;
-    private Calculator calculator;
+public class DisabledCalculator extends CalcDecorators implements Calculator{
+
 
     public DisabledCalculator(Child child, Calculator calculator) {
-        this.child = child;
-        this.calculator = calculator;
+        super(child, calculator);
     }
 
-    @Override
     public double calculate(Child child) {
        if(child.getIndex() == 0)
        {

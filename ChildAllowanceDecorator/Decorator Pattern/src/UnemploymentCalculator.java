@@ -1,16 +1,13 @@
 /**
  * Created by paulienl on 20/01/2017.
  */
-public class UnemploymentCalculator implements Calculator {
-    private Child child;
-    private Calculator calculator;
+public class UnemploymentCalculator extends CalcDecorators implements  Calculator{
+
 
     public UnemploymentCalculator(Child child, Calculator calculator) {
-        this.child = child;
-        this.calculator = calculator;
+        super(child, calculator);
     }
 
-        @Override
         public double calculate(Child child) {
             if(child.getIndex() == 0)
             {
